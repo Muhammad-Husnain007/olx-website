@@ -1,0 +1,25 @@
+/* Card.css */
+
+.plot-card{
+  width: 25%; /* Adjusted width */
+  height: 430px;
+  position: relative;
+  /* left: -25px; */
+  display: flex;
+  justify-content: flex-start;
+}
+.plot-span{
+  position: relative;
+  left: 20px;
+  top: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.plot-cards-row {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap; 
+  overflow-x: auto; /* Enables horizontal scrolling */
+  padding-bottom: 20px; /* Optional: Space between rows */
+}
