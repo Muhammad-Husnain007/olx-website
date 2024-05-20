@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import navbarcss from './style.navbar.css';
+import './style.navbar.css';
 import carpng from './assest/car.png';
 import apartmentpng from './assest/apartment.png';
 import multipleColour from './assest/colours.svg';
