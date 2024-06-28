@@ -1,0 +1,5 @@
+# Ignore .env file
+.env
+
+# Ignore directories that contain sensitive data
+sensitive-directory/
