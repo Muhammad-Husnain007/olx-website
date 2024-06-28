@@ -4,6 +4,7 @@ import Card from '../HomeScreen/Plot/Card.jsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData, selectPlotsData } from '../../Sells/redux/Slice.jsx';
 import { useParams, useNavigate } from 'react-router-dom';
+import Style from '../AllScreenMediaQuerry/style.module.css'
 
 const AllPlots = () => {
   const dispatch = useDispatch();
@@ -57,10 +58,10 @@ const AllPlots = () => {
   
   return (
     <div>
-      <div style={plotContainerStyle}>
+      <div className={Style['main-div']} style={plotContainerStyle}>
         {plotData &&
           plotData.map((plot, index) => (
-            <div key={plot.id}  onClick={() => showData(plot._id)}
+            <div className={Style['single-card']} key={plot.id}  onClick={() => showData(plot._id)}
             style={singleplotStyle}>
               <Card
                 imageUrl={plot.imageUrl}

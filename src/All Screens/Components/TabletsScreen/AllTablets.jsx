@@ -4,7 +4,7 @@ import Card from '../HomeScreen/Tablet/Card.jsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData, selectTabletsData } from '../../Sells/redux/Slice.jsx';
 import { useParams, useNavigate } from 'react-router-dom';
-
+import Style from '../AllScreenMediaQuerry/style.module.css'
 
 const AllTablets = () => {
   const dispatch = useDispatch();
@@ -58,10 +58,10 @@ const AllTablets = () => {
   
   return (
     <div>
-      <div style={ContainerStyle}>
+      <div className={Style['main-div']} style={ContainerStyle}>
         {tabletsData &&
           tabletsData.map((tablets, index) => (
-            <div key={tablets.id}  onClick={() => showData(tablets._id)}
+            <div className={Style['single-card']} key={tablets.id}  onClick={() => showData(tablets._id)}
             style={singleStyle}>
               <Card
                 imageUrl={tablets.imageUrl}

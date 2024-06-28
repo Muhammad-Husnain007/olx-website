@@ -113,7 +113,7 @@ const postAd = async (e) => {
        <div className='include-detail'>
        <p style={{fontSize: 20, fontWeight: 'bold', marginTop: 2}}>INCLUDE SOME DETAILS</p>
          <span className='title'>Ad title</span>
-         <input type='text' value={title} onChange={(e) => setTitle(e.target.value)} />
+         <input type='text' placeholder=' Ad Title' value={title} onChange={(e) => setTitle(e.target.value)} />
          <span className='description'>Description</span>
          <textarea
            className='textArea'
@@ -121,9 +121,10 @@ const postAd = async (e) => {
            onChange={(e) => setDescription(e.target.value)}
            cols='30'
            rows='10'
+           placeholder='Description...'
          ></textarea>
          <span className='condition'>Condition</span>
-         <input type='text' value={condition} onChange={(e) => setCondition(e.target.value)} />
+         <input type='text' placeholder='Condition...' value={condition} onChange={(e) => setCondition(e.target.value)} />
        </div>
        <div className='set-price'>
        <p className='details'>SET A PRICE</p>

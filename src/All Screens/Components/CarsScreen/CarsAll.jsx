@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchData, selectCarsData } from '../../Sells/redux/Slice.jsx';
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import Style from '../AllScreenMediaQuerry/style.module.css'
 
 const CarsAll = () => {
   const dispatch = useDispatch();
@@ -58,10 +59,10 @@ const CarsAll = () => {
 
   return (
     <div>
-      <div style={cardContainerStyle}>
+      <div className={Style['main-div']} style={cardContainerStyle}>
         {carData &&
           carData.map((car, index) => (
-            <div
+            <div className={Style['single-card']}
              key= {car.id} onClick={() => showData(car._id)} // Pass the card ID to the function
              style={singleCardStyle}
             >

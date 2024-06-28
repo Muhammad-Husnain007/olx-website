@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './StyleCards.css'
 const Card = (props) => {
   const { imageSrc, spanText } = props; // Destructure the props
 
@@ -26,10 +26,10 @@ const Card = (props) => {
   };
 
   return (
-    <div style={cardStyle}>
-      <div style={innerCardStyle}>
-        <img src={imageSrc} alt="" style={{ width: '93px', height: '93px', margin: '10px' }}  /> {/* Use the provided image source */}
-        <span style={spanStyle}>{spanText}</span> {/* Use the provided text */}
+    <div className='images-span-main' style={cardStyle}>
+      <div className='images-span' style={innerCardStyle}>
+        <img className='categories-images' src={imageSrc} alt="" style={{ width: '93px', height: '93px', margin: '10px' }}  /> {/* Use the provided image source */}
+        <span className='categories-span' style={spanStyle}>{spanText}</span> {/* Use the provided text */}
       </div>
     </div>
   );

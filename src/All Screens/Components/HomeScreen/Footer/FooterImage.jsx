@@ -6,7 +6,7 @@ import storeImage from './assests/storeImage.svg'
 
 const FooterImage = () => {
     return (
-        <div style={{
+        <div className='mainDiv' style={{
             width: 1270, height: 210,
             display: 'flex', borderBottom: '1px solid black', overflowY: 'hidden',
             backgroundColor: '#F7F8F8'

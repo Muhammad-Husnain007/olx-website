@@ -4,6 +4,7 @@ import Card from '../HomeScreen/Bikes/Card.jsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData, selectBikesData } from '../../Sells/redux/Slice.jsx';
 import { useParams, useNavigate } from 'react-router-dom';
+import Style from '../AllScreenMediaQuerry/style.module.css'
 
 const AllbikesPhones = () => {
   const dispatch = useDispatch();
@@ -57,10 +58,10 @@ const AllbikesPhones = () => {
     
   return (
     <div>
-      <div style={bikesContainerStyle}>
+      <div className={Style['main-div']} style={bikesContainerStyle}>
         {bikesData &&
           bikesData.map((bikes, index) => (
-            <div key={bikes.id}  onClick={() => showData(bikes._id)}
+            <div className={Style['single-card']} key={bikes.id}  onClick={() => showData(bikes._id)}
             style={singlebikesStyle}>
               <Card
                 imageUrl={bikes.imageUrl}

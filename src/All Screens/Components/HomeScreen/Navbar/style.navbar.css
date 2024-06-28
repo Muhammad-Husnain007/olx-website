@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* Add box-sizing for better element sizing */
   font-family: sans-serif;
 }
 
@@ -147,4 +146,70 @@
   top: -20px;
   left: 5px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+      width: 100%;
+      height: 170px;
+      display: flex;
+      flex-direction: column;
+      align-items: center !important;
+    }
+    .icon-image{
+      width: 100%;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+     
+    }
+    .olx-motors-property{
+      width: 100%;
+      height: 70px;
+    }
+    .olxBlue{
+      position: relative;
+      left: -80px;
+    }
+    .motors{
+      position: relative;
+      left: -80px;
+    }
+    .motorsSpan{
+      position: relative;
+      left: -70px;
+      width: 80px;
+    }
+    .property{
+      position: relative;
+      left: -80px;
+    }
+    .propertySpan{
+      position: relative;
+      left: -70px;
+      width: 80px;
+    }
+
+    .search-fields{
+      width: 100%;
+      height: 100px;
+    }
+    .olxImage{
+      display: none;
+    }
+    .selects{
+      display: none;
+    }
+    .login{
+      display: none;
+    }
+    .sellAd{
+      display: none;
+    }
+    .search-field input{
+      width: 320px;
+      height: 50px;
+      position: relative;
+      top: 20px;
+    }
 }

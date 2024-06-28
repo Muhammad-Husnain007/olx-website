@@ -47,7 +47,7 @@ const MobileCards = () => {
   return (
     <>
      <span className='span'>Mobile Phones</span>
-    <div className='mobile-card-row'>
+    <div className='mobile-cards-row'>
       {mobilesData &&
         mobilesData.slice(0, 4).map((mobiles, index) => ( // Limit to 4 cards only
           <div key={mobiles.id} onClick={() => showData(mobiles._id)} className='mobile-card'>

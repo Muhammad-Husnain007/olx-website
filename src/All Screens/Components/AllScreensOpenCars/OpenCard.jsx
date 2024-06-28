@@ -68,7 +68,7 @@ const OpenCard = () => {
       <div className='card-image-div'>
       <img className='imageCard' src={data.imageUrl} />
       </div>
-      <div style={{width: 610, height: 250,marginTop: 30, borderRadius: 5, border: '1px solid lightgrey'}}>
+      <div  className='card-des-div' style={{width: 610, height: 250,marginTop: 30, borderRadius: 5, border: '1px solid lightgrey'}}>
         <h1 className='price'>{"Rs " + data.price}</h1>
         <p className='description-card'>{data.description}</p>
         <p className='condition-card'>{'Condition ' + data.condition}</p>

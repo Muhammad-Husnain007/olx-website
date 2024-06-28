@@ -4,7 +4,7 @@ import MobileCard from '../HomeScreen/MobliePhones/MobileCards.jsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData, selectMobilesData } from '../../Sells/redux/Slice.jsx';
 import { useParams, useNavigate } from 'react-router-dom';
-
+import Style from '../AllScreenMediaQuerry/style.module.css'
 
 const AllMobilePhones = () => {
   const dispatch = useDispatch();
@@ -57,10 +57,11 @@ const AllMobilePhones = () => {
 
   return (
     <div>
-      <div style={mobileContainerStyle}>
+    
+      <div className= {Style['main-div']} style={mobileContainerStyle}>
         {mobileData &&
           mobileData.map((mobile, index) => (
-            <div key={mobile.id}  onClick={() => showData(mobile._id)}
+            <div className= {Style['single-card']} key={mobile.id}  onClick={() => showData(mobile._id)}
              style={singlemobileStyle}>
               <Card
                 imageUrl={mobile.imageUrl}

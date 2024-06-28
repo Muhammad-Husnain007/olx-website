@@ -94,10 +94,8 @@ const AdminScreen = () => {
   return (
     <>
       <Navbar />
-
       <div className='adminScreen-mainDiv'>
         <div className='sidebar'>
-
           <ul className='sidebarUl'>
             <span className='dashboardHead'>Dashboard</span>
             <li  onClick={seeAd}>See Your Ad <img style={{width: 25, height: 25, position: 'relative', left: 65}} src={seeImg} alt="" /></li>

@@ -1,0 +1,40 @@
+  /* Houses */
+
+@media screen and (max-width: 768px){
+.main-div{
+    width: 100% !important;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-navDiv{
+  width: 100%;
+  height: auto;
+}
+.single-card{
+    width: 300px !important;
+    height: 300px;
+}
+}
+  /* Land */
+/* @media screen and (max-width: 768px){
+
+} */
+  /* Mobile */
+/* @media screen and (max-width: 768px){
+
+} */
+  /* Motocycle */
+/* @media screen and (max-width: 768px){
+
+} */
+  /* Tablet */
+/* @media screen and (max-width: 768px){
+
+} */
+  /* TV */
+/* @media screen and (max-width: 768px){
+
+} */

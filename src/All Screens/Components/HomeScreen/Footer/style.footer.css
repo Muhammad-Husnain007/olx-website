@@ -68,3 +68,13 @@
 .freeClassifieds div span {
     font-weight: bold;
 }
+
+
+@media screen and (max-width: 768px){
+    .main-div-fooImage{
+        display: none !important;
+    }
+    .mainDiv{
+        display: none !important;
+    }
+}

@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
 .see-edit {
@@ -36,10 +36,11 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
+
 
 }
-.sidebarUl{
+
+.sidebarUl {
     width: 400px;
     position: relative;
     left: -100px;
@@ -49,7 +50,8 @@
     justify-content: center;
     flex-direction: column;
 }
-.sidebarUl li{
+
+.sidebarUl li {
     font-size: 20px;
     width: 295px;
     height: 60px;
@@ -62,7 +64,8 @@
     border-radius: 5px;
 
 }
-.dashboardHead{
+
+.dashboardHead {
     font-size: 20px;
     width: 295px;
     height: 60px;
@@ -75,6 +78,7 @@
     border-radius: 5px;
 
 }
+
 .add-delete {
     width: 80%;
     height: 270px;
@@ -99,52 +103,91 @@
     top: 20px;
     left: 20px;
 }
-.paragraph{
+
+.paragraph {
     line-height: 20px;
     position: relative;
     top: 30px;
     left: 20px;
     font-size: 14px;
 }
-.menue3dot1{
+
+.menue3dot1 {
     width: 20px;
     height: 20px;
     position: relative;
     left: 130px;
     top: 20px;
 }
-.menue3dot2{
+
+.menue3dot2 {
     width: 20px;
     height: 20px;
     position: relative;
     left: 100px;
     top: 20px;
 }
-.likeUnlike1{
+
+.likeUnlike1 {
     width: 20px;
     height: 20px;
     position: relative;
     left: 250px;
     top: 80px;
 }
-.likeUnlike2{
+
+.likeUnlike2 {
     width: 20px;
     height: 20px;
     position: relative;
     left: 250px;
     top: 80px;
 }
-.likeUnlike3{
+
+.likeUnlike3 {
     width: 20px;
     height: 20px;
     position: relative;
     left: 250px;
     top: 60px;
 }
-.likeUnlike4{
+
+.likeUnlike4 {
     width: 20px;
     height: 20px;
     position: relative;
     left: 250px;
     top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .adminScreen-mainDiv {
+        width: 100% !important;
+        height: auto;
+
+    }
+
+    .sidebar {
+        width: 100% !important;
+        height: 100vh;
+
+    }
+
+    .sidebarUl {
+        width: 100%;
+        height: 630px;
+        position: relative;
+        left: -100px;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar ul li {
+        width: 310px;
+        position: relative;
+    }
+
+    .dashboard {
+        display: none;
+    }
 }

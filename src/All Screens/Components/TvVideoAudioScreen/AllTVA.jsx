@@ -4,6 +4,7 @@ import Card from '../HomeScreen/TVA/Card.jsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData, selectTvaData } from '../../Sells/redux/Slice.jsx';
 import { useParams, useNavigate } from 'react-router-dom';
+import Style from '../AllScreenMediaQuerry/style.module.css'
 
 const AllTVA = () => {
   const dispatch = useDispatch();
@@ -58,10 +59,10 @@ const AllTVA = () => {
 
   return (
     <div>
-      <div style={ContainerStyle}>
+      <div className={Style['main-div']} style={ContainerStyle}>
         {tvaData &&
           tvaData.map((tva, index) => (
-            <div key={tva.id}  onClick={() => showData(tva._id)}
+            <div className={Style['single-card']} key={tva.id}  onClick={() => showData(tva._id)}
              style={singleStyle}>
               <Card
                 imageUrl={tva.imageUrl}

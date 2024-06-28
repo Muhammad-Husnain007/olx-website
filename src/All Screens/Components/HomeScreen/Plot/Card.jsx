@@ -57,13 +57,13 @@ const Card = (props) => {
 
   };
   return (
-    <div style={mainStyle}>
-      <div style={cardStyle}>
-        <div style={innerCardStyle}>
-          <img src={imageUrl} alt="" style={{ width: '100%', height: '50%', marginTop: '-15px' }} />
-          <p style={priceStyle}>{price}</p>
+    <div className='main-card-style' style={mainStyle}>
+      <div className='card-style' style={cardStyle}>
+        <div className='inner-card-style' style={innerCardStyle}>
+          <img className='image' src={imageUrl} alt="" style={{ width: '100%', height: '50%', marginTop: '-15px' }} />
+          <p className='p1' style={priceStyle}>{price}</p>
           <span style={descriptionStyle}>{description}</span>
-          <p style={locationStyle}>{location}</p>
+          <p className='p2' style={locationStyle}>{location}</p>
           <p style={conditionStyle}>{condition}</p>
         </div>
       </div>
