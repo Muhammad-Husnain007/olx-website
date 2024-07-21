@@ -30,7 +30,7 @@ const Routing = () => {
 
       {/* ========== HomeScreen Route ======= */}
 
-        <Route path="/home" element={<Homescreen />} />
+        <Route path="/" element={<Homescreen />} />
         {/* Add more routes here as needed */}
         <Route path='/uploadAd' element={<UserAds />} />
         <Route path='/editUploadAd/:id' element={<EditUploadAd />} />

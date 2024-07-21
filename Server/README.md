@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -14,3 +15,6 @@ Currently, two official plugins are available:
 =======
 # OLX-Website
 >>>>>>> 7145e764f28993541ae2f794201553c101ea1951
+=======
+# Olx-Web
+>>>>>>> origin/main
